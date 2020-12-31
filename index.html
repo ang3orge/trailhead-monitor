@@ -6,8 +6,40 @@
         <title>Trailhead Monitor</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
     </head>
-    <body>        
+    <body>
+        <div class="ui container" style="margin-top: 4rem;">
+            <div class="ui segment">
+                <h4>Track new Trailhead Profile</h4>
+                <div class="ui input">
+                    <input id="trailhead-username-input" type="text" placeholder="Enter Trailhead username">
+                    &nbsp;&nbsp;&nbsp;
+                    <button id="add-profile" class="ui primary button">
+                        Add
+                    </button>
+                </div>
+            </div>
+
+            <div class="ui segment">
+                <h4>
+                    Show me details for
+                    <div class="ui selection dropdown">
+                        <div class="text">Select one</div>
+                        <i class="dropdown icon"></i>
+                    </div>
+                </h4>
+                <div id="profile" class="ui segment">
+                </div>
+                <div id="rank" class="ui segment">
+                </div>
+                <div id="awards" class="ui segment">
+                </div>
+            </div>
+        </div>
+        
         <script src="./main.js"></script>
     </body>
 </html>
